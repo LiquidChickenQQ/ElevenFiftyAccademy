@@ -1,0 +1,12 @@
+/*This is a CSS comment*/
+
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+​
+/*This is another CSS comment*/
+
+.wrapper {
+    border: 10px solid red;
+}
