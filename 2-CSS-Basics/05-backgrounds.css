@@ -1,0 +1,38 @@
+.wrapper {
+    margin: 5px;
+}
+
+​
+/* 3 */
+
+h1 {
+    text-align: center;
+}
+
+
+/*this sets the background color of the entire body*/
+
+body {
+    background-color: rgb(193, 192, 194);
+}
+
+​
+/* 4 */
+
+.background1 {
+    background-color: lightblue;
+}
+
+​ .background2 {
+    background-image: url("../4-assets/upfeathers.png");
+    ​
+}
+
+
+/* 7 */
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
