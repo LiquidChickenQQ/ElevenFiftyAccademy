@@ -1,0 +1,31 @@
+.wrapper {
+    margin: 5px;
+}
+
+​ h1 {
+    text-align: center;
+}
+
+.list {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+body {
+    background-image: url("../4-assets/upfeathers.png");
+}
+
+.example1 {
+    height: 150px;
+    width: 50%;
+    background-color: cornflowerblue;
+    align-items: center;
+}
+
+.example2 img {
+    width: 400px;
+    height: 400px;
+}
