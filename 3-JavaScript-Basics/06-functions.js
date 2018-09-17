@@ -42,7 +42,7 @@ function getMyTaxReturnAndDoMyTaxesAndStuff(a, x, y, z) {
     return total;
 }
 getMyTaxReturnAndDoMyTaxesAndStuff(10000, 5, 20, 9);
-*/
+
 function getMyTaxReturnAndDoMyTaxesAndStuff(a, x, y, z) {
     let myInc = a * x;
     let myTaxes = myInc - y;
@@ -66,7 +66,7 @@ function add(x, y, ) {
     return sum;
 }
 add(1, 1);
-*/
+
 
 
 
@@ -83,3 +83,23 @@ function petNameAndBreed(name, breed) {
     return petDetails;
 }
 petNameAndBreed("Sansa", "Generic");
+
+function calculatePriceIndiana(quantity, price) {
+    var tax = 0.07;
+    var totalTax = quantity * price * tax;
+    var totalPrice = totalTax + quantity * price;
+    console.log(totalPrice);
+    return totalPrice;
+}​
+calculatePriceIndiana(17, 5);
+*/
+
+function calculatePriceIndiana(quantity, price) {
+    var tax = 0.07;
+    var totalTax = quantity * price * tax;
+    var totalPrice = totalTax + quantity * price;
+    console.log(totalPrice);
+    return totalPrice;
+}
+
+calculatePriceIndiana(17, 5)
