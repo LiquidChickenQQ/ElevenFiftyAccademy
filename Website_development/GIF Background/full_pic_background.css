@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    padding-top: 10%;
+    color: azure;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("beach.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
