@@ -11,13 +11,46 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .content {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("wine_pour.gif");
+    background-image: linear-gradient(rgba(26, 26, 26, 0.25), rgba(26, 26, 26, 0.25)), url("wine_pour.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+    background-color: #fff;
+    color: #000;
+    opacity: 0.5;
+    transition: background-color 0.1s ease-in, border-color 0.1s ease-in;
+}
+
+.ghost-button-rounded-corners {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    z-index: 999;
 }
