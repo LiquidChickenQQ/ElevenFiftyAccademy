@@ -1,0 +1,45 @@
+.input-block {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%
+    width: 80%x;
+    height: 80%;
+    background-color: aquamarine;
+    text-align: center;
+    border: 5px
+    border-color: black;
+}
+
+.username {
+   text-align; center;
+   font-family: Tahoma;
+   font-size: 20px;
+}
+.password {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+.confirm {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
+
+
+p {
+  font-family: Tahoma;
+  padding; 10px;
+  font-size: 30px;
+}
+ body
+ {
+   background-color: lightblue;
+ }
+ 
+ .btn {
+   padding: 20px;
+   font-family: Tahoma;
+ }
