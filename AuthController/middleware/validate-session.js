@@ -1,28 +1,22 @@
-var jwt = require('jsonwebtoken');
-var sequelize = require('../db');
-var User = sequelize.import('../models/user');
+const jwt = require('jsonwebtoken');
+const Person = require('../db').import('../models/person');
 
-module.exports = function (req, res, next) {
-     // if (req.method == 'OPTIONS') {
-         //     next()
-         // } else {
-        var sessionToken = req.headers.authorization; //1
-        console.log(sessionToken) //2
-        if (!sessionToken) return res.status(403).send({ auth: false, message: 'No token provided.' }); //3
-        else { //4
-            jwt.verify(sessionToken, process.env.JWT_SECRET, (err, decoded) => { //5
-                if(decoded){
-                    User.findOne({where: { id: decoded.id}}).then(user => { //6
-                        req.user = user; //7
-                        next();
-                    },
-                    function(){ //8
-                        res.status(401).send({error: 'Not authorized'});
-                    });
-                } else { //9
-                    res.status(400).send({error: 'Not authorized'});
-                }
-            });
-        }
-    //}
+const validateSession = (req, res, next) => {
+  const token = req.headers.authorization;
+  jwt.verify(token, 'i_am_secret', (err, decodedToken) => {
+    if (!err && decodedToken){
+      Person.findOne({where: {id: decodedToken.id}})
+        .then(user => {
+          if (!user) throw 'err'
+          req.user = user;
+          return next();
+        })
+        .catch(err => next(err))
+    } else {
+      req.errors = err;
+      return next();
+    }
+  })
 }
+
+module.exports = validateSession;
