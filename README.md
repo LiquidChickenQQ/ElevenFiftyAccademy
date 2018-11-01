@@ -1,4 +1,6 @@
+# node-debug-challenge
 
-JavaScript SmartStart Program
-
-This is my quest for code enlightenment!  This repository contains the training and projects required for me to take over the WORLD!  Just like we do every night, hey Pinky?
+1) Clone Repo
+2) Run npm install
+3) Run 'nodemon app.js'
+4) Debug!
